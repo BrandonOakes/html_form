@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <style>
+    body{
+      background-color: orange;
+    }
+    button:hover{
+      color:red;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action='' method='POST'>
+      <label for="first">First Name: </label>
+        <input type="text" id="first" name="firstname" placeholder="John" required>
+      <label for="last">Last Name: </label>
+        <input type="text" id="last" name="lastname" placeholder="Smith" required>
+        <br>
+      <label for="male">Male </label>
+        <input id="male" name="gender" type="radio" value="male">
+      <label for="female">Female </label>
+          <input id="female" name="gender" type="radio" value="female">
+      <label for="other">Other </label>
+          <input id="other" name="gender" type="radio" value="other">
+          <br>
+      <label for="email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="email" required>
+      <label for="password">Password: </label>
+          <input id="password" name="password" type="password" placeholder="password" pattern=".{5,10}" required title="password must be 5 to 10 characters">
+          <br>
+      <label for="birthday">Birthday: </label>
+        <select id="birthday" name="month">
+          <option>Month</option>
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>Apr</option>
+          <option>May</option>
+          <option>Jun</option>
+          <option>Jul</option>
+          <option>Aug</option>
+          <option>Sept</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select>
+        <select id="birthday" name="day">
+          <option>Day</option>
+          <option >Mon</option>
+          <option>Tues</option>
+          <option>Wed</option>
+          <option>Thur</option>
+          <option>Frid</option>
+          <option>Sat</option>
+          <option>Sun</option>
+        </select>
+        <select id="birthday" name="year">
+          <option>Year</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+        </select>
+        <br>
+      <label for="consentTerms">I agree to the terms and conditions</label>
+        <input id="consentTerms" name="terms" type="checkbox" required>
+        <br>
+      <button>Submit</button<
+    </form>
+  </body>
+</html>
